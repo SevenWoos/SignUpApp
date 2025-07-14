@@ -41,11 +41,13 @@ def signup():
         conn.commit()
       
     except sqlite3.IntegrityError:
-      return 'User already signed up. Email already exists'
+      # return 'User already signed up. Email already exists'
+      return render_template('already_exists.html')
     finally:
         conn.close()
     
-    return "Thanks for signing up!"
+    # return "Thanks for signing up!"
+    return render_template('success.html')
 
 if __name__ == '__main__':
     init_db()
