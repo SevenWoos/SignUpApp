@@ -1,0 +1,19 @@
+# Virtual environment folder
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode settings folder (optional)
+.vscode/
+
+# OS files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# SQLite database (optional - but you might want to track this if it’s your main data)
+# users.db
+
+steps.txt
